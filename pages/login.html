@@ -4,19 +4,89 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-	<main>
-		<h1>Entrar</h1>
-		<form action="#" method="post">
-			<label for="email">E-mail</label>
-			<input type="email" id="email" name="email" required>
+	<header class="header">
+		<div class="header__container">
+			<a href="index.html" class="header__logo">
+				<svg class="header__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="40" height="40" rx="8" fill="currentColor"></rect>
+					<path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+				<span>TechShop</span>
+			</a>
+			<nav class="header__nav">
+				<ul class="header__menu">
+					<li class="header__menu-item"><a href="index.html" class="header__menu-link">Home</a></li>
+					<li class="header__menu-item"><a href="products.html" class="header__menu-link">Produtos</a></li>
+					<li class="header__menu-item"><a href="#ofertas" class="header__menu-link">Ofertas</a></li>
+					<li class="header__menu-item"><a href="#contato" class="header__menu-link">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-			<label for="password">Senha</label>
-			<input type="password" id="password" name="password" required>
+	<main class="main-content">
+		<div class="container">
+			<h1>Entrar</h1>
+			<form action="#" method="post">
+				<div class="form__group">
+					<label class="form__label form__label--required" for="email">E-mail</label>
+					<input class="form__input" type="email" id="email" name="email" required>
+				</div>
+				<div class="form__group">
+					<label class="form__label form__label--required" for="password">Senha</label>
+					<input class="form__input" type="password" id="password" name="password" required>
+				</div>
+                <button class="btn btn-secondary" type="submit">Entrar</button>
+                <br>
+                <div class="form__footer">
+                    <label><input class="form__checkbox" type="checkbox" name="remember" id="remember">
+                    <span>Lembrar-me</span>
+                    </label>
+                    <br>
+                    <a href="register.html" class="footer__link">Não tem uma conta? Cadastre-se.</a>
+                    <br>
+                    <a href="forgot-password.html" class="footer__link">Esqueceu a senha?</a>
+                </div>
 
-			<button type="submit">Entrar</button>
-		</form>
+
+			</form>
+		</div>
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__grid">
+				<div>
+					<div class="footer__logo">TechShop</div>
+					<p class="footer__about">Ofertas incríveis em tecnologia, eletrônicos e acessórios para o seu dia a dia.</p>
+				</div>
+				<div>
+					<h3 class="footer__column-title">Categorias</h3>
+					<div class="footer__links">
+						<a href="#" class="footer__link">Notebooks</a>
+						<a href="#" class="footer__link">Smartphones</a>
+						<a href="#" class="footer__link">Acessórios</a>
+					</div>
+				</div>
+				<div>
+					<h3 class="footer__column-title">Ajuda</h3>
+					<div class="footer__links">
+						<a href="#" class="footer__link">Central de Ajuda</a>
+						<a href="#" class="footer__link">Envio e Entrega</a>
+						<a href="#" class="footer__link">Trocas e Devoluções</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<p class="footer__copyright">© 2026 TechShop. Todos os direitos reservados.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
